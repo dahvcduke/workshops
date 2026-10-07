@@ -54,18 +54,24 @@ The original deployment instructions are retained below for reference. Use the *
 Deploy your Gaussian splat environments as static sites using [Dokploy](https://dokploy.com/).
 
 1. Spin up a virtual machine (VM) using [Virtual Computing Manager](https://vcm.duke.edu/).
-2. Click **Request a VM**, select **Linux**, and choose **Ubuntu Server 26.04**.
+2. Click **Request a VM**, select **Linux**, and choose **Ubuntu Server 24.04**.
 3. Create an alias, such as `[first name]-splats`.
 4. Turn off **Automatic power downs** and provide a reason, such as "Deploying static websites for a class."
-5. SSH into the machine using the admin user. Replace `admin` with your admin username and `your-alias` with your VM's alias:
+5. SSH into the machine using the admin user and the VM's **hostname** shown in Virtual Computing Manager. Replace `admin` with your admin username and `your-vm-hostname` with the full hostname:
 
    ```sh
-   ssh admin@your-alias.colab.duke.edu
+   ssh admin@your-vm-hostname
    ```
 
    Enter your password when prompted.
 
-6. Install Dokploy using the following command:
+6. Make sure you are logged in as **root** before installing Dokploy. Start a root login shell:
+
+   ```sh
+   sudo -i
+   ```
+
+   Then install Dokploy:
 
    ```sh
    curl -sSL https://dokploy.com/install.sh | sh
