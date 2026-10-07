@@ -47,7 +47,9 @@ Using [Marble](https://marble.worldlabs.ai/), generate a Gaussian splat using th
 - Replace the `index.html` file in your unzipped [Marble](https://marble.worldlabs.ai/) export with the repository's `index.html` file.
 - Follow the repository's README instructions to upload and position spatial audio.
 
-## Deploy
+## ~~Deploy~~
+
+The original deployment instructions are retained below for reference. Use the **Submit via Box** instructions for this assignment.
 
 Deploy your Gaussian splat environments as static sites using [Dokploy](https://dokploy.com/).
 
@@ -78,7 +80,14 @@ Deploy your Gaussian splat environments as static sites using [Dokploy](https://
 13. Click **Deploy**.
 14. Under **Domains**, click **Add Domain**. Click the dice icon to generate a random domain. Set **Container Port** to `80`, turn **HTTPS** on, select **Let's Encrypt** as the **Certificate Provider**, and click **Create**.
 
+## Submit via Box
+
+1. Zip the static website folders for your Personal Archive, Fantasy, and Hand-Drawn Scene projects. Include all files needed to run each website.
+2. Upload the ZIP files to a **Box folder**.
+3. Create a **share link** for the folder and make sure it can be accessed.
+4. Submit the **Box folder share link to Canvas**.
+
 ## Deliverables
 
 - **1. Fish out of Water:** Upload screenshots to Canvas.
-- **2–4. Personal Archive, Fantasy, and Hand-Drawn Scene:** Submit links to your deployed websites to Canvas.
+- **2–4. Personal Archive, Fantasy, and Hand-Drawn Scene:** Upload your zipped static website folders to Box and submit the folder's share link to Canvas.
